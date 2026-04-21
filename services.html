@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Floating Counselling</title>
+  <meta name="description" content="Over 15,000 sessions delivered. Affordable one-to-one, group, couple and family therapy.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .page-header {
+      padding: 180px 0 100px;
+      text-align: center;
+      background: var(--plum);
+      color: var(--text-light);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header h1 {
+      color: var(--text-light);
+      font-size: 3.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .page-header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 1rem auto 0;
+      color: rgba(255,255,255,0.9);
+      position: relative;
+      z-index: 2;
+    }
+    .page-blob {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      filter: blur(50px);
+      top: -200px;
+      right: -100px;
+    }
+    .service-detail-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 6rem 0;
+    }
+    .service-detail-section.reverse {
+      direction: rtl;
+    }
+    .service-detail-section.reverse > * {
+      direction: ltr;
+    }
+    .service-detail-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--plum);
+    }
+    .service-detail-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+    .service-detail-img {
+      border-radius: 20px;
+      width: 100%;
+      height: 400px;
+      object-fit: fill;
+      box-shadow: 0 20px 40px rgba(123, 63, 140, 0.15);
+    }
+    @media(max-width: 900px) {
+      .service-detail-section { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo-text">
+          <img src="images/logo.png" alt="Floating Counselling Logo" class="site-logo">
+          <div class="logo-brand">Floating<span>Counselling</span></div>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html" class="active">Counselling</a>
+          <a href="community.html">Community hub</a>
+          <a href="holiday-school.html">Holiday School</a>
+          <a href="events.html">Events</a>
+          <a href="#contact">Contact</a>
+          <div class="nav-actions">
+            <a href="login.html" style="font-family: var(--font-heading); font-weight: 600; color: var(--forest-teal);">Log In</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-primary" style="box-shadow: none;">Donate</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="page-blob"></div>
+      <div class="container fade-in visible">
+        <h1>Therapy & Support</h1>
+        <p>Expert counselling and mentoring designed for individuals, couples, and families across the global majority.</p>
+      </div>
+    </div>
+
+    <!-- Counselling -->
+    <section class="bg-linen">
+      <div class="container fade-in">
+        <div class="service-detail-section">
+          <div class="service-detail-content">
+            <h2>Counselling & Mentoring</h2>
+            <p>Our dedicated team of qualified psychotherapists and trauma-informed practitioners have delivered over 15,000 sessions. We provide a safe, culturally sensitive space to explore your feelings and find healing.</p>
+            <p><strong>Available Formats:</strong> One-to-one, group, couple, and family therapy.</p>
+            <p><strong>Location:</strong> In-person and online via telephone/video sessions.</p>
+            <p style="color: var(--forest-teal); font-weight: 500; font-size:1.2rem; margin-top:2rem;">FREE to low costs counselling for the elderly, universal credit recipients, and low income families.</p>
+            <a href="mailto:info@floatingcounselling.co.uk" class="btn btn-primary" style="margin-top: 1.5rem;">Book a Session</a>
+          </div>
+          <div>
+            <img class="service-detail-img" src="https://images.unsplash.com/photo-1739289671650-a5f3e0069d29?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fENvdW5zZWxsaW5nJTIwJTI2JTIwTWVudG9yaW5nfGVufDB8fDB8fHww" alt="Counselling session">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Masterclass -->
+    <section class="bg-mist">
+      <div class="container fade-in">
+        <div class="service-detail-section reverse">
+          <div class="service-detail-content">
+            <h2 style="color: var(--forest-teal);">Financial Literacy & Business</h2>
+            <p>Empowerment goes beyond mental health; it extends to financial confidence and security. Our training programs are designed to support entrepreneurial growth and practical budgeting skills.</p>
+            <p>Join our masterclasses and retreats to gain confidence, learn business strategy, and build financial independence within a supportive community network.</p>
+            <ul class="content-list" style="margin: 1.5rem 0 2rem;">
+              <li>Budgeting skills & financial literacy</li>
+              <li>Entrepreneurial growth workshops</li>
+              <li>Confidence building masterclasses</li>
+            </ul>
+            <a href="mailto:info@floatingcounselling.co.uk?subject=Business%20Masterclass" class="btn btn-secondary">Inquire About Masterclasses</a>
+          </div>
+          <div>
+            <img class="service-detail-img" src="https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Business training and financial literacy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing & Packages -->
+    <section class="bg-linen" style="padding-top: 4rem;">
+      <div class="container fade-in">
+        <div class="text-center">
+          <h2 class="section-title center">Investment in Yourself</h2>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">Choose a block session or commit to long-term growth with our comprehensive Yearly Membership.</p>
+        </div>
+        
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="pricing-title">Block of 6 Sessions</h3>
+            <div class="price">£90<span style="font-size: 1.2rem; color: var(--text-muted);">/session</span></div>
+            <p class="pricing-subtitle">£540 Total (3 Instalments of £180)</p>
+            <ul class="pricing-features">
+              <li>1:1 Therapy Support</li>
+              <li>Qualified Psychotherapist</li>
+              <li>Tools & Strategies</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">Book Now</a>
+          </div>
+          
+          <div class="pricing-card premium">
+            <h3 class="pricing-title" style="color: var(--mist);">Yearly Membership</h3>
+            <div class="price">£270<span style="font-size: 1.2rem; color: rgba(255,255,255,0.7);">/month</span></div>
+            <p class="pricing-subtitle">Save approx £3,168/year</p>
+            <ul class="pricing-features">
+              <li>2 Counselling sessions per month</li>
+              <li>All mental health & business training</li>
+              <li>Monthly empowerment seminars</li>
+              <li>Physical book & ebooks included</li>
+              <li>Monthly motivational videos</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" style="background: var(--text-light); color: var(--plum);">Join Membership</a>
+          </div>
+          
+          <div class="pricing-card">
+            <h3 class="pricing-title">Block of 12 Sessions</h3>
+            <div class="price">£60<span style="font-size: 1.2rem; color: var(--text-muted);">/session</span></div>
+            <p class="pricing-subtitle">£720 Total (3 Instalments of £240)</p>
+            <ul class="pricing-features">
+              <li>Deeper Therapy Support</li>
+              <li>Generational Trauma Healing</li>
+              <li>Extensive Workbooks</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counselling Principles -->
+    <section class="bg-mist">
+      <div class="container fade-in">
+        <h2 class="section-title">Our Therapy Principles</h2>
+        <div class="grid-2-col">
+          <div>
+            <h3 style="margin-bottom: 1rem; color: var(--plum);">What We Do</h3>
+            <ul class="content-list">
+              <li>Help clients be aware of their healing journey</li>
+              <li>Work through past hurts, traumas and let downs</li>
+              <li>Prevent generational trauma cycles</li>
+              <li>Teach emotional regulation and resilience</li>
+              <li>Improve communication in relationships</li>
+              <li>Create positive attachment between parent and child</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 1rem; color: var(--forest-teal);">What We Don't Do</h3>
+            <div style="background: white; padding: 2rem; border-radius: 15px; border-left: 4px solid var(--forest-teal);">
+              <p style="font-size: 1.1rem; color: var(--text-muted); font-style: italic;">"We do not expect or encourage you to behave as your counsellor would behave if confronted with a similar problem in their own life."</p>
+            </div>
+            <p style="margin-top: 1.5rem; color: var(--text-muted);">Our outcome goal is to decrease maladaptive behaviour, build long-term resilience, and create healthy secure attachments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Section -->
+    <section class="bg-linen">
+      <div class="container fade-in">
+        <div class="service-detail-section">
+          <div>
+            <img class="service-detail-img" src="images/book.png" alt="Disciplining With Love Book">
+          </div>
+          <div class="service-detail-content">
+            <h2 style="color: var(--plum);">Disciplining With Love</h2>
+            <p><strong>"It's Time To Discipline Effectively With Love Without The Guilt"</strong></p>
+            <p>Authored by Celestina Oniye-Thomas, this Afrikan Christian inspired parenting book focuses on "Connect Before You Correct".</p>
+            <ul class="content-list" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+              <li>Master emotional regulation and empathy</li>
+              <li>Understand natural consequences</li>
+              <li>Maintain secure attachment during discipline</li>
+              <li>Prevent generational trauma</li>
+            </ul>
+            <p><em>Available as a physical book (UK) and Ebook (International).</em></p>
+            <a href="mailto:info@floatingcounselling.co.uk?subject=Buy%20Book" class="btn btn-primary" style="margin-top: 1rem;">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Services Section -->
+    <section class="bg-mist">
+      <div class="container fade-in">
+        <div class="service-detail-section reverse">
+          <div>
+            <img class="service-detail-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Beautiful property interior">
+          </div>
+          <div class="service-detail-content">
+            <h2 style="color: var(--forest-teal);">Property Services</h2>
+            <p>Floating Counselling Property offers property management services run by an experienced landlord, aimed at making life easier for estate agents and landlords.</p>
+            <ul class="content-list" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+              <li>Guaranteed rent every month for 3–7 years</li>
+              <li>Professional tenants (NHS workers, bankers, etc.)</li>
+              <li>Minor maintenance handled (under £200)</li>
+              <li>Weekly cleaners and grocery deliveries for tenants</li>
+              <li>No voids, no marketing, zero stress</li>
+            </ul>
+            <p style="font-style: italic; color: var(--text-muted); font-size:0.95rem;">Registered with Property Redress Scheme (PRS) & Information Commissioner's Office (ICO).</p>
+            <a href="https://wa.me/447305882959" class="btn btn-secondary" style="margin-top: 1rem;">WhatsApp Property Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.png" alt="Floating Counselling Logo" class="footer-logo-img">
+            <div class="logo-brand">Floating<span>Counselling</span></div>
+          </a>
+          <p class="footer-desc">Empowering individuals, families, and marginalised groups through holistic support and therapeutic care.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Counselling & Mentoring</a></li>
+            <li><a href="community.html">Community Hub</a></li>
+            <li><a href="holiday-school.html">Holiday School</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Contact Us</h5>
+          <ul>
+            <li><a href="mailto:info@floatingcounselling.co.uk">info@floatingcounselling.co.uk</a></li>
+            <li>WhatsApp: +44 (0)7305 882959</li>
+            <li style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Croydon and London, UK</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FLOATING COUNSELLING ™. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) { header.classList.add('scrolled'); } 
+      else { header.classList.remove('scrolled'); }
+
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8) {
+          element.classList.add('visible');
+        }
+      });
+    });
+    window.dispatchEvent(new Event('scroll'));
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    if(hamburger) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>

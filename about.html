@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Floating Counselling</title>
+  <meta name="description" content="Led by a diverse team of African women. Meet our founder and dedicated leadership team.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .page-header {
+      padding: 180px 0 100px;
+      text-align: center;
+      background: var(--plum);
+      color: var(--text-light);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header h1 {
+      color: var(--text-light);
+      font-size: 3.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .page-header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 1rem auto 0;
+      color: rgba(255,255,255,0.9);
+      position: relative;
+      z-index: 2;
+    }
+    .page-blob {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      filter: blur(50px);
+      top: -200px;
+      right: -100px;
+    }
+    .founder-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 6rem 0;
+    }
+    .founder-img {
+      border-radius: 20px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    @media(max-width: 900px) {
+      .founder-section { grid-template-columns: 1fr; }
+    }
+    .team-social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    .team-social a {
+      color: var(--forest-teal);
+      background: rgba(29, 106, 92, 0.1);
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+    .team-social a:hover {
+      background: var(--forest-teal);
+      color: white;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-mist">
+  
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo-text">
+          <img src="images/logo.png" alt="Floating Counselling Logo" class="site-logo">
+          <div class="logo-brand">Floating<span>Counselling</span></div>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About Us</a>
+          <a href="services.html">Counselling</a>
+          <a href="community.html">Community hub</a>
+          <a href="holiday-school.html">Holiday School</a>
+          <a href="events.html">Events</a>
+          <a href="#contact">Contact</a>
+          <div class="nav-actions">
+            <a href="login.html" style="font-family: var(--font-heading); font-weight: 600; color: var(--forest-teal);">Log In</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-primary" style="box-shadow: none;">Donate</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="page-blob"></div>
+      <div class="container fade-in visible">
+        <h1>Led By Experience</h1>
+        <p>A diverse team of professionals whose lived experience and expertise shape every part of our work.</p>
+      </div>
+    </div>
+
+    <!-- Founder Section -->
+    <section class="bg-linen">
+      <div class="container fade-in">
+        <div class="founder-section">
+          <div>
+            <span style="color: var(--warm-amber); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Meet Our Founder</span>
+            <h2 class="section-title" style="margin-bottom: 2rem;">"Resilience And Self Confidence Saved My Life"</h2>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem;">Celestina vowed to never have children because of fear of repeating trauma she experienced from her stepmother... At 16, she suffered a spinal injury that left her paralysed for almost 24 hours. She taught herself to walk again, despite doctors telling her she may never walk.</p>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem;">This experience awakened a deep love of life and passion to work with children. She is now a wife and mother of 2.</p>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">As a fully certified and qualified Integrative, Behaviour Psychotherapist with 15 years in the profession, her mission is to help parents heal their past traumas so they do not pass them on to their children.</p>
+            <a href="https://uk.linkedin.com/in/celestina-oniye-thomas" class="btn btn-secondary">Connect with Celestina</a>
+          </div>
+          <div>
+            <img class="founder-img" src="images/Founder.png" alt="Celestina Oniye-Thomas">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="bg-mist">
+      <div class="container fade-in">
+        <div class="text-center">
+          <h2 class="section-title center">Our Leadership Team</h2>
+          <p style="max-width: 600px; margin: 0 auto 4rem; color: var(--text-muted); font-size: 1.1rem;">From food provision to psychotherapy, finance education to youth mentorship — everything we offer is designed with compassion, community, and cultural relevance at the heart.</p>
+        </div>
+        
+        <div class="team-grid">
+          <!-- Wonu -->
+          <div class="team-card">
+            <img src="images/Director&headoffinance.png" alt="Omowonu-Ola Ogunlela" class="team-img">
+            <div class="team-info">
+              <h4>Omowonu-Ola Ogunlela</h4>
+              <p>Director & Head of Finance</p>
+              <div class="team-social">
+                <a href="https://uk.linkedin.com/in/wonu-ogunlela-fcca-3781453a?trk=public_post_feed-actor-name" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/floating_bodymindsoul" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/FloatingCounselling" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Elizabeth -->
+          <div class="team-card">
+            <img src="images/Director&RelationshipCoach.png" alt="Elizabeth Owode" class="team-img">
+            <div class="team-info">
+              <h4>Elizabeth Owode</h4>
+              <p>Director & Relationship Coach</p>
+              <div class="team-social">
+                <a href="https://myfamily101.kit.com/e96f58fc71" title="Personal Profile"><i class="fa-solid fa-link"></i></a>
+                <a href="https://www.youtube.com/@floatingcounsellinguk" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/floating_bodymindsoul" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Linda -->
+          <div class="team-card">
+            <img src="images/Director&SafeguardingOfficer.png" alt="Linda Yeboah" class="team-img">
+            <div class="team-info">
+              <h4>Linda Yeboah</h4>
+              <p>Director & Safeguarding Officer</p>
+              <div class="team-social">
+                <a href="https://www.youtube.com/@floatingcounsellinguk" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/FloatingCounselling" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Niina -->
+          <div class="team-card">
+            <img src="images/HolidayCampManager.png" alt="Niina Kabesa" class="team-img">
+            <div class="team-info">
+              <h4>Niina Kabesa</h4>
+              <p>Holiday Camp Manager</p>
+              <div class="team-social">
+                <a href="https://share.google/wGX9KlnFWCvGjK7cG" title="Profile"><i class="fa-solid fa-link"></i></a>
+                <a href="https://www.youtube.com/@floatingcounsellinguk" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Marleine -->
+          <div class="team-card">
+            <img src="images/AdminLead.png" alt="Marleine Griffin" class="team-img">
+            <div class="team-info">
+              <h4>Marleine Griffin</h4>
+              <p>Admin Lead</p>
+              <div class="team-social">
+                <a href="https://www.youtube.com/@floatingcounsellinguk" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/floating_bodymindsoul/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.png" alt="Floating Counselling Logo" class="footer-logo-img">
+            <div class="logo-brand">Floating<span>Counselling</span></div>
+          </a>
+          <p class="footer-desc">Empowering individuals, families, and marginalised groups through holistic support and therapeutic care.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Counselling & Mentoring</a></li>
+            <li><a href="community.html">Community Hub</a></li>
+            <li><a href="holiday-school.html">Holiday School</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Contact Us</h5>
+          <ul>
+            <li><a href="mailto:info@floatingcounselling.co.uk">info@floatingcounselling.co.uk</a></li>
+            <li>WhatsApp: +44 (0)7305 882959</li>
+            <li style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Croydon and London, UK</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FLOATING COUNSELLING ™. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) { header.classList.add('scrolled'); } 
+      else { header.classList.remove('scrolled'); }
+
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8) {
+          element.classList.add('visible');
+        }
+      });
+    });
+    window.dispatchEvent(new Event('scroll'));
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    if(hamburger) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>

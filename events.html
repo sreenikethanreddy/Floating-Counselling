@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Programmes | Floating Counselling</title>
+  <meta name="description" content="Community events, outdoor cinemas, and historic programmes delivered by Floating Counselling.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .page-header {
+      padding: 180px 0 100px;
+      text-align: center;
+      background: var(--forest-teal-dark);
+      color: var(--text-light);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header h1 {
+      color: var(--text-light);
+      font-size: 3.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .page-header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 1rem auto 0;
+      color: rgba(255,255,255,0.9);
+      position: relative;
+      z-index: 2;
+    }
+    .page-blob {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: rgba(29, 106, 92, 0.5);
+      border-radius: 50%;
+      filter: blur(50px);
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: var(--mist);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+      border-radius: 2px;
+    }
+    .event-container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    .event-container.left { left: 0; }
+    .event-container.right { left: 50%; }
+    .event-container::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: var(--warm-amber);
+      border: 4px solid var(--linen);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .event-container.right::after {
+      left: -10px;
+    }
+    .event-content {
+      padding: 2rem;
+      background-color: white;
+      position: relative;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+    .event-content h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--plum);
+    }
+    .event-date {
+      color: var(--warm-amber);
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .timeline::after { left: 31px; }
+      .event-container { width: 100%; padding-left: 70px; padding-right: 25px; }
+      .event-container::after { left: 21px; }
+      .event-container.left::after, .event-container.right::after { left: 21px; }
+      .event-container.right { left: 0; }
+    }
+  </style>
+</head>
+<body class="bg-linen">
+  
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo-text">
+          <img src="images/logo.png" alt="Floating Counselling Logo" class="site-logo">
+          <div class="logo-brand">Floating<span>Counselling</span></div>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Counselling</a>
+          <a href="community.html">Community hub</a>
+          <a href="holiday-school.html">Holiday School</a>
+          <a href="events.html" class="active">Events</a>
+          <a href="#contact">Contact</a>
+          <div class="nav-actions">
+            <a href="login.html" style="font-family: var(--font-heading); font-weight: 600; color: var(--forest-teal);">Log In</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-primary" style="box-shadow: none;">Donate</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="page-blob"></div>
+      <div class="container fade-in visible">
+        <h1>Community Events</h1>
+        <p>A history of our impactful local and international programmes bringing people together.</p>
+      </div>
+    </div>
+
+    <section style="padding: 6rem 0;">
+      <div class="container fade-in">
+        
+        <div class="text-center" style="margin-bottom: 4rem;">
+          <h2 class="section-title center">Historic Milestones</h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">From outdoor cinemas to anti-knife crime education, our reach spans specific community needs across the years.</p>
+        </div>
+
+        <div class="timeline">
+          
+          <div class="event-container left">
+            <div class="event-content">
+              <div class="event-date">Partnership</div>
+              <h3>Croydon Central East (CrESNT)</h3>
+              <p style="color: var(--text-muted);">Delivering a locality project for residents via a dedicated Local Community Partnership fund.</p>
+            </div>
+          </div>
+          
+          <div class="event-container right">
+            <div class="event-content">
+              <div class="event-date">2022</div>
+              <h3 style="color: var(--forest-teal);">Croydon Outdoor Cinema</h3>
+              <p style="color: var(--text-muted);">Blockbuster movies free to all residents in partnership with Mother of Nations. Included luxury hampers, health/wellbeing education, and refreshments.</p>
+            </div>
+          </div>
+
+          <div class="event-container left">
+            <div class="event-content">
+              <div class="event-date">June 2022</div>
+              <h3>Community Park Party</h3>
+              <p style="color: var(--text-muted);">A 7-hour alcohol-free family event at Woodside Green celebrating the Queen's Platinum Jubilee, complete with food and activities.</p>
+            </div>
+          </div>
+
+          <div class="event-container right">
+            <div class="event-content">
+              <div class="event-date">2019</div>
+              <h3 style="color: var(--warm-amber);">Homeless Necessity Project</h3>
+              <p style="color: var(--text-muted);">Responding to London's homelessness crisis by going out to speak directly with rough sleepers, distributing donated clothes, food, and essentials.</p>
+            </div>
+          </div>
+
+          <div class="event-container left">
+            <div class="event-content">
+              <div class="event-date">2019</div>
+              <h3 style="color: var(--forest-teal);">Anti-Knife Crime Project</h3>
+              <p style="color: var(--text-muted);">Educating young people in schools on the real consequences of knife crime and carrying weapons.</p>
+            </div>
+          </div>
+          
+          <div class="event-container right">
+            <div class="event-content">
+              <div class="event-date">2016 – 2017</div>
+              <h3>Women's Monthly Pampering</h3>
+              <p style="color: var(--text-muted);">A focused programme combining physical health, mental wellbeing, education, empowerment, and much-needed self-care.</p>
+            </div>
+          </div>
+
+          <div class="event-container left">
+            <div class="event-content">
+              <div class="event-date">2017</div>
+              <h3 style="color: var(--warm-amber);">Business Retreat</h3>
+              <p style="color: var(--text-muted);">A weekend getaway at Hilton Hotel, Cobham. Specifically designed for entrepreneurs and business owners to network and achieve personal growth.</p>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- International Support -->
+    <section class="bg-mist">
+      <div class="container fade-in text-center">
+        <h2 class="section-title center">International Community Support</h2>
+        <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">Our impact extends far beyond the UK. Through dedicated international outreach programmes, especially focused on Africa, we aim to provide resources, business support, and community aid in international market settings. We believe wraparound care is a global necessity.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.png" alt="Floating Counselling Logo" class="footer-logo-img">
+            <div class="logo-brand">Floating<span>Counselling</span></div>
+          </a>
+          <p class="footer-desc">Empowering individuals, families, and marginalised groups through holistic support and therapeutic care.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Counselling & Mentoring</a></li>
+            <li><a href="community.html">Community Hub</a></li>
+            <li><a href="holiday-school.html">Holiday School</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Contact Us</h5>
+          <ul>
+            <li><a href="mailto:info@floatingcounselling.co.uk">info@floatingcounselling.co.uk</a></li>
+            <li>WhatsApp: +44 (0)7305 882959</li>
+            <li style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Croydon and London, UK</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FLOATING COUNSELLING ™. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) { header.classList.add('scrolled'); } 
+      else { header.classList.remove('scrolled'); }
+
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8) {
+          element.classList.add('visible');
+        }
+      });
+    });
+    window.dispatchEvent(new Event('scroll'));
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    if(hamburger) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>
