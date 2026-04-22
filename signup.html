@@ -31,18 +31,26 @@
     </div>
   </header>
 
-  <main>
-    <div class="auth-wrapper">
-      <div class="auth-blob-1"></div>
-      <div class="auth-blob-2"></div>
-
-      <div class="auth-card fade-in visible">
-        <div class="auth-header">
-          <h2>Join Our Community</h2>
-          <p>Create your account and start your journey.</p>
+  <main class="auth-shell">
+    <div class="container">
+      <div class="auth-shell-grid fade-in visible">
+        <div class="auth-story">
+          <p class="eyebrow">Create Account</p>
+          <h1>Join a community built around care, growth and support.</h1>
+          <p>Create your account to stay close to programmes, resources, events and future opportunities inside the Floating Counselling ecosystem.</p>
+          <div class="auth-benefits">
+            <div class="auth-benefit"><h3>Stay informed</h3><p>Keep up with services, programmes and community updates.</p></div>
+            <div class="auth-benefit"><h3>Start simply</h3><p>A straightforward sign-up experience with a warmer, more welcoming feel.</p></div>
+          </div>
         </div>
 
-        <form action="#" method="POST">
+        <div class="auth-card modern">
+          <div class="auth-header">
+            <h2>Join Our Community</h2>
+            <p>Create your account and start your journey.</p>
+          </div>
+
+          <form action="#" method="POST">
           <div class="form-group">
             <label for="fullname">Full Name</label>
             <input type="text" id="fullname" class="form-control" placeholder="Enter your full name" required>
@@ -62,8 +70,9 @@
           <div class="auth-actions">
             <button type="submit" class="btn btn-primary">Create Account</button>
           </div>
-        </form>
-        <div class="auth-footer">Already have an account? <a href="login.html">Log In</a></div>
+          </form>
+          <div class="auth-footer">Already have an account? <a href="login.html">Log In</a></div>
+        </div>
       </div>
     </div>
   </main>

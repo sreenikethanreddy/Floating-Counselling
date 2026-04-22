@@ -57,6 +57,56 @@
     staggerContainers.forEach(function (el) { obs.observe(el); });
   }
 
+  // ───────────────────────── COUNT-UP METRICS ─────────────────────────
+  function initCountUp() {
+    var counters = document.querySelectorAll('[data-count]');
+    if (!counters.length) return;
+
+    function formatCount(value, target) {
+      var rounded = Math.round(value);
+      if (target >= 1000) return rounded.toLocaleString();
+      return String(rounded);
+    }
+
+    function animateCounter(el) {
+      if (el.dataset.counted === 'true') return;
+      el.dataset.counted = 'true';
+
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      if (isNaN(target)) return;
+
+      var duration = 1400;
+      var startTime = null;
+
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = formatCount(target * eased, target);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      }
+
+      window.requestAnimationFrame(step);
+    }
+
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.45 });
+
+      counters.forEach(function (el) { obs.observe(el); });
+    } else {
+      counters.forEach(animateCounter);
+    }
+  }
+
   // ───────────────────────── HAMBURGER MENU ─────────────────────────
   function initHamburger() {
     const hamburger = document.getElementById('hamburger');
@@ -448,6 +498,7 @@
     initHeaderScroll();
     initFadeIn();
     initStagger();
+    initCountUp();
     initHamburger();
     initDropdowns();
     initFaqAccordion();

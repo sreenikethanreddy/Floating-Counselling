@@ -31,18 +31,26 @@
     </div>
   </header>
 
-  <main>
-    <div class="auth-wrapper">
-      <div class="auth-blob-1"></div>
-      <div class="auth-blob-2"></div>
-
-      <div class="auth-card fade-in visible">
-        <div class="auth-header">
-          <h2>Welcome Back</h2>
-          <p>We're glad to see you again.</p>
+  <main class="auth-shell">
+    <div class="container">
+      <div class="auth-shell-grid fade-in visible">
+        <div class="auth-story">
+          <p class="eyebrow">Member Access</p>
+          <h1>Welcome back to your support space.</h1>
+          <p>Log in to continue your journey, manage your membership and stay connected to resources, events and community updates.</p>
+          <div class="auth-benefits">
+            <div class="auth-benefit"><h3>Stay connected</h3><p>Access your account and continue where you left off.</p></div>
+            <div class="auth-benefit"><h3>Simple and secure</h3><p>A clean sign-in flow designed to feel calm, not clinical.</p></div>
+          </div>
         </div>
 
-        <form action="#" method="POST">
+        <div class="auth-card modern">
+          <div class="auth-header">
+            <h2>Welcome Back</h2>
+            <p>We're glad to see you again.</p>
+          </div>
+
+          <form action="#" method="POST">
           <div class="form-group">
             <label for="email">Email Address</label>
             <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
@@ -56,13 +64,14 @@
           </div>
           <div class="auth-actions">
             <button type="submit" class="btn btn-primary">Log In</button>
-            <p style="text-align:center;color:var(--text-muted);font-size:0.9rem;margin:0.5rem 0;">Or</p>
+            <div class="auth-divider">or</div>
             <button type="button" class="btn btn-secondary" style="background:white;color:var(--text-dark);border:1px solid rgba(0,0,0,0.1);box-shadow:none;">
               <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" style="width:18px;margin-right:10px;vertical-align:middle;"> Continue with Google
             </button>
           </div>
-        </form>
-        <div class="auth-footer">Don't have an account? <a href="signup.html">Create Account</a></div>
+          </form>
+          <div class="auth-footer">Don't have an account? <a href="signup.html">Create Account</a></div>
+        </div>
       </div>
     </div>
   </main>
