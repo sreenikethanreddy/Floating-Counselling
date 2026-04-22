@@ -5,118 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Holiday School | Floating Counselling</title>
   <meta name="description" content="Empowering children aged 5-11 through our therapeutic holiday school programme.">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <style>
-    .page-header {
-      padding: 180px 0 100px;
-      text-align: center;
-      background: var(--warm-amber);
-      color: var(--text-light);
-      position: relative;
-      overflow: hidden;
-    }
-    .page-header h1 {
-      color: var(--text-light);
-      font-size: 3.5rem;
-      position: relative;
-      z-index: 2;
-    }
-    .page-header p {
-      font-size: 1.25rem;
-      max-width: 600px;
-      margin: 1rem auto 0;
-      color: rgba(255,255,255,0.9);
-      position: relative;
-      z-index: 2;
-    }
-    .page-blob {
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 50%;
-      filter: blur(50px);
-      top: -200px;
-      left: -100px;
-    }
-    .programme-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-    .programme-card {
-      background: white;
-      padding: 2.5rem;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-      border-top: 4px solid var(--forest-teal);
-    }
-    .programme-card h4 {
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-      color: var(--forest-teal);
-    }
-    .programme-card p {
-      color: var(--text-muted);
-      font-size: 1rem;
-    }
+    .programme-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; margin-top:3rem; }
+    .programme-card { background:white; padding:2.5rem; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.03); border-top:4px solid var(--forest-teal); }
+    .programme-card h4 { font-size:1.3rem; margin-bottom:1rem; color:var(--forest-teal); }
+    .programme-card p { color:var(--text-muted); font-size:1rem; }
   </style>
 </head>
 <body class="bg-mist">
-  
+
   <header id="header">
     <div class="container">
       <nav class="navbar">
-        <a href="index.html" class="logo-text">
-          <img src="images/logo.png" alt="Floating Counselling Logo" class="site-logo">
-          <div class="logo-brand">Floating<span>Counselling</span></div>
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
+        <a href="index.html" class="logo-text"><img src="images/logo.png" alt="Floating Counselling Logo" class="site-logo"><div class="logo-brand">Floating<span>Counselling</span></div></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
         <div class="nav-links" id="navLinks">
           <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Counselling</a>
-          <a href="community.html">Community hub</a>
-          <a href="holiday-school.html" class="active">Holiday School</a>
-          <a href="events.html">Events</a>
-          <a href="#contact">Contact</a>
-          <div class="nav-actions">
-            <a href="login.html" style="font-family: var(--font-heading); font-weight: 600; color: var(--forest-teal);">Log In</a>
-            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-primary" style="box-shadow: none;">Donate</a>
-          </div>
+            <a href="about.html">About Us</a>
+
+                      <div class="nav-dropdown-wrap"><button class="nav-dropdown-trigger">Services <span class="nav-chevron"></span></button><div class="nav-dropdown-panel"><a href="services.html"><span class="nav-dropdown-icon" style="background:rgba(123,63,140,0.1);color:var(--plum);">♡</span> Counselling &amp; Therapy</a><a href="property.html"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🏠</span> Property Services</a><a href="holiday-school.html"><span class="nav-dropdown-icon" style="background:rgba(201,125,78,0.1);color:var(--warm-amber);">🌱</span> Holiday School</a><a href="community.html"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🤝</span> Community Hub</a></div></div>
+          <div class="nav-dropdown-wrap"><button class="nav-dropdown-trigger">Events <span class="nav-chevron"></span></button><div class="nav-dropdown-panel mega-menu-panel"><div class="mega-menu-grid"><div class="mega-menu-links"><div class="mega-menu-label">Upcoming</div><a href="events.html#masterclass"><span class="nav-dropdown-icon" style="background:rgba(231,76,60,0.1);color:#e74c3c;">🎓</span><span>The Architecture of Attachment <span class="live-dot"></span></span></a><div class="mega-menu-label" style="margin-top:0.5rem;">Initiatives</div><a href="events.html#homeless"><span class="nav-dropdown-icon" style="background:rgba(201,125,78,0.1);color:var(--warm-amber);">🏡</span> Homeless Necessity</a><a href="events.html#compass"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🌍</span> The Global Compass</a><a href="events.html"><span class="nav-dropdown-icon" style="background:rgba(123,63,140,0.1);color:var(--plum);">📜</span> The Legacy Archive</a></div><div><div class="mega-menu-label">Gallery</div><div class="mega-gallery stagger-container"><div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&auto=format&fit=crop&q=80" alt="Community gathering" class="animate-float"></div><div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&auto=format&fit=crop&q=80" alt="Family event"></div><div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=400&auto=format&fit=crop&q=80" alt="Workshop session"></div></div></div></div></div></div>
+          <a href="sanctuary.html" class="cart-link">Sanctuary <span class="cart-badge" id="cartBadge">0</span></a>
+          <a href="contact.html">Contact</a>
+          <div class="nav-actions"><a href="login.html" style="font-family:var(--font-heading);font-weight:600;color:var(--forest-teal);">Log In</a><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-donate">Donate</a></div>
         </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="page-header">
-      <div class="page-blob"></div>
-      <div class="container fade-in visible">
-        <h1>Holiday School</h1>
-        <p>Combining academic enrichment with emotional intelligence and therapy for children aged 5–11.</p>
-      </div>
-    </div>
+    <div class="page-header" style="background:var(--warm-amber);"><div class="page-blob" style="left:-100px;right:auto;"></div><div class="container fade-in visible"><h1>Holiday School</h1><p>Combining academic enrichment with emotional intelligence and therapy for children aged 5–11.</p></div></div>
 
-    <!-- Overview Section -->
     <section class="bg-linen">
       <div class="container fade-in">
         <div class="grid-2-col">
           <div>
             <h2 class="section-title">Therapeutic Care Meets Fun</h2>
-            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem;">Our Holiday School isn't just about activities; it's a structural programme integrating academic maths and science, healthy eating education ("You & Food Matter"), and deep emotional intelligence development.</p>
-            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem;">We teach core values: <strong>Honesty, Fairness, Kindness, Integrity, and Being Outspoken.</strong></p>
-            <div style="background: rgba(29, 106, 92, 0.05); padding: 1.5rem; border-radius: 10px; margin-top: 2rem;">
-              <h4 style="color: var(--forest-teal); margin-bottom: 0.5rem;">The Team Behind the Magic</h4>
-              <ul class="content-list" style="margin-bottom: 0;">
+            <p style="font-size:1.1rem;color:var(--text-muted);margin-bottom:1.5rem;">Our Holiday School isn't just about activities; it's a structural programme integrating academic maths and science, healthy eating education ("You & Food Matter"), and deep emotional intelligence development.</p>
+            <p style="font-size:1.1rem;color:var(--text-muted);margin-bottom:1.5rem;">We teach core values: <strong>Honesty, Fairness, Kindness, Integrity, and Being Outspoken.</strong></p>
+            <div style="background:rgba(29,106,92,0.05);padding:1.5rem;border-radius:10px;margin-top:2rem;">
+              <h4 style="color:var(--forest-teal);margin-bottom:0.5rem;">The Team Behind the Magic</h4>
+              <ul class="content-list" style="margin-bottom:0;">
                 <li>Professional Psychotherapists & Artists</li>
                 <li>Electric Engineers (Science)</li>
                 <li>Fitness Instructors</li>
@@ -125,130 +60,44 @@
               </ul>
             </div>
           </div>
-          <div>
-            <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Children learning and having fun" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-          </div>
+          <div><img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Children learning and having fun" style="width:100%;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.1);"></div>
         </div>
       </div>
     </section>
 
-    <!-- Weekly Themes -->
     <section class="bg-mist">
       <div class="container fade-in">
-        <div class="text-center">
-          <h2 class="section-title center">Example Weekly Themes</h2>
-          <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Carefully structured four-week therapeutic focuses.</p>
-        </div>
-        
+        <div class="text-center"><h2 class="section-title center">Example Weekly Themes</h2><p style="color:var(--text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Carefully structured four-week therapeutic focuses.</p></div>
         <div class="programme-grid">
-          <div class="programme-card" style="border-color: var(--warm-amber);">
-            <h4 style="color: var(--warm-amber);">Week 1: Hope & Dreams</h4>
-            <p>"My dreams and hopes are reachable." Children learn they have choices and practice happiness visualization and hopefulness.</p>
-          </div>
-          
-          <div class="programme-card" style="border-color: var(--teal);">
-            <h4>Week 2: Uniqueness</h4>
-            <p>"It's okay to ask for help." Focusing on the beauty of why we are unique and making better choices with friends.</p>
-          </div>
-          
-          <div class="programme-card" style="border-color: var(--plum);">
-            <h4 style="color: var(--plum);">Week 3: Confidence</h4>
-            <p>Affirmation and mirror work. Building deep self-love, confidence, and emotional intelligence.</p>
-          </div>
-          
-          <div class="programme-card" style="border-color: var(--forest-teal);">
-            <h4>Week 4: Coping with Loss</h4>
-            <p>Soul work and appreciation. Writing letters for loved ones and exploring healthy ways of coping with endings.</p>
-          </div>
+          <div class="programme-card hover-depth" style="border-color:var(--warm-amber);"><h4 style="color:var(--warm-amber);">Week 1: Hope & Dreams</h4><p>"My dreams and hopes are reachable." Children learn they have choices and practice happiness visualization and hopefulness.</p></div>
+          <div class="programme-card hover-depth"><h4>Week 2: Uniqueness</h4><p>"It's okay to ask for help." Focusing on the beauty of why we are unique and making better choices with friends.</p></div>
+          <div class="programme-card hover-depth" style="border-color:var(--plum);"><h4 style="color:var(--plum);">Week 3: Confidence</h4><p>Affirmation and mirror work. Building deep self-love, confidence, and emotional intelligence.</p></div>
+          <div class="programme-card hover-depth" style="border-color:var(--forest-teal);"><h4>Week 4: Coping with Loss</h4><p>Soul work and appreciation. Writing letters for loved ones and exploring healthy ways of coping with endings.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- Scale & Registration -->
     <section class="bg-linen">
-      <div class="container fade-in" style="text-align: center;">
+      <div class="container fade-in" style="text-align:center;">
         <h2 class="section-title center">Growing Impact</h2>
-        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
-          <div style="background: white; padding: 2rem; border-radius: 15px; width: 200px;">
-            <h3 style="font-size: 2.5rem; color: var(--warm-amber); margin-bottom: 0.5rem;">400+</h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Children in 2021</p>
-          </div>
-          <div style="background: white; padding: 2rem; border-radius: 15px; width: 200px;">
-            <h3 style="font-size: 2.5rem; color: var(--plum); margin-bottom: 0.5rem;">1,000+</h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Children in 2022</p>
-          </div>
-          <div style="background: white; padding: 2rem; border-radius: 15px; width: 200px;">
-            <h3 style="font-size: 2.5rem; color: var(--forest-teal); margin-bottom: 0.5rem;">1,440</h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Available Slots (Summer 23)</p>
-          </div>
+        <div style="display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem;">
+          <div style="background:white;padding:2rem;border-radius:15px;width:200px;" class="hover-depth"><h3 style="font-size:2.5rem;color:var(--warm-amber);margin-bottom:0.5rem;">400+</h3><p style="color:var(--text-muted);font-size:0.9rem;">Children in 2021</p></div>
+          <div style="background:white;padding:2rem;border-radius:15px;width:200px;" class="hover-depth"><h3 style="font-size:2.5rem;color:var(--plum);margin-bottom:0.5rem;">1,000+</h3><p style="color:var(--text-muted);font-size:0.9rem;">Children in 2022</p></div>
+          <div style="background:white;padding:2rem;border-radius:15px;width:200px;" class="hover-depth"><h3 style="font-size:2.5rem;color:var(--forest-teal);margin-bottom:0.5rem;">1,440</h3><p style="color:var(--text-muted);font-size:0.9rem;">Available Slots (Summer 23)</p></div>
         </div>
-        
-        <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">Registration is handled via the government-funded Holiday Activities Voucher scheme.</p>
-        <a href="mailto:info@floatingcounselling.co.uk?subject=Holiday%20School" class="btn btn-primary">Inquire About Next Term</a>
+        <p style="color:var(--text-muted);margin-bottom:2rem;font-size:1.1rem;">Registration is handled via the government-funded Holiday Activities Voucher scheme.</p>
+        <a href="https://wa.me/447305882959?text=Hello%2C%20I%20am%20inquiring%20about%20the%20next%20Holiday%20School%20term.%20Could%20you%20share%20details%20please%3F" target="_blank" class="btn btn-primary">Inquire About Next Term</a>
       </div>
     </section>
-
   </main>
 
-  <footer id="contact">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="index.html" class="footer-logo">
-            <img src="images/logo.png" alt="Floating Counselling Logo" class="footer-logo-img">
-            <div class="logo-brand">Floating<span>Counselling</span></div>
-          </a>
-          <p class="footer-desc">Empowering individuals, families, and marginalised groups through holistic support and therapeutic care.</p>
-        </div>
-        <div class="footer-links">
-          <h5>Quick Links</h5>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Counselling & Mentoring</a></li>
-            <li><a href="community.html">Community Hub</a></li>
-            <li><a href="holiday-school.html">Holiday School</a></li>
-            <li><a href="events.html">Events</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h5>Contact Us</h5>
-          <ul>
-            <li><a href="mailto:info@floatingcounselling.co.uk">info@floatingcounselling.co.uk</a></li>
-            <li>WhatsApp: +44 (0)7305 882959</li>
-            <li style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Croydon and London, UK</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 FLOATING COUNSELLING ™. All rights reserved.</p>
-      </div>
-    </div>
+  <div class="lightbox-overlay" id="lightbox"><button class="lightbox-close" data-close-lightbox>✕</button><button class="lightbox-nav lightbox-prev" onclick="fcLightboxPrev()">‹</button><img id="lightboxImg" src="" alt="Gallery image"><button class="lightbox-nav lightbox-next" onclick="fcLightboxNext()">›</button><div class="lightbox-counter" id="lightboxCounter"></div></div>
+
+  <footer>
+    <div class="newsletter-bar"><div class="container"><h4>Join the Anchor List</h4><p>Weekly insights on growth and stability.</p><form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email address" required><button type="submit">Subscribe</button></form><p class="newsletter-msg"></p></div></div>
+    <div class="footer-main"><div class="container"><div class="footer-grid"><div><a href="index.html" class="footer-logo"><img src="images/logo.png" alt="Floating Counselling Logo" class="footer-logo-img"><div class="logo-brand">Floating<span>Counselling</span></div></a><p class="footer-desc">Empowering individuals, families, and marginalised groups through holistic support and therapeutic care.</p></div><div class="footer-links"><h5>Quick Links</h5><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Counselling &amp; Mentoring</a></li><li><a href="community.html">Community Hub</a></li><li><a href="sanctuary.html">Sanctuary (Shop)</a></li><li><a href="FAQ.html">FAQ</a></li></ul></div><div class="footer-links"><h5>Contact Us</h5><ul><li><a href="mailto:info@floatingcounselling.co.uk">info@floatingcounselling.co.uk</a></li><li>WhatsApp: +44 (0)7305 882959</li><li style="color:rgba(255,255,255,0.7);margin-top:1rem;">Croydon and London, UK</li></ul></div></div><div class="footer-bottom"><p>&copy; 2024 FLOATING COUNSELLING ™. All rights reserved.</p></div></div></div>
   </footer>
 
-  <script>
-    window.addEventListener('scroll', function() {
-      const header = document.getElementById('header');
-      if (window.scrollY > 50) { header.classList.add('scrolled'); } 
-      else { header.classList.remove('scrolled'); }
-
-      const fadeElements = document.querySelectorAll('.fade-in');
-      fadeElements.forEach(element => {
-        const rect = element.getBoundingClientRect();
-        if (rect.top <= window.innerHeight * 0.8) {
-          element.classList.add('visible');
-        }
-      });
-    });
-    window.dispatchEvent(new Event('scroll'));
-
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    if(hamburger) {
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-      });
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

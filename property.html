@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Services | Floating Counselling</title>
+  <meta name="description" content="Guaranteed rent, professional tenants, and hassle-free property management by Floating Counselling Property.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .service-detail-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 6rem 0;
+    }
+    .service-detail-section.reverse {
+      direction: rtl;
+    }
+    .service-detail-section.reverse > * {
+      direction: ltr;
+    }
+    .service-detail-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .service-detail-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+    .service-detail-img {
+      border-radius: 20px;
+      width: 100%;
+      height: 400px;
+      object-fit: fill;
+      box-shadow: 0 20px 40px rgba(29, 106, 92, 0.15);
+    }
+    @media(max-width: 900px) {
+      .service-detail-section { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="bg-linen">
+
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo-text">
+          <img src="images/logo.png" alt="Floating Counselling Logo" class="site-logo">
+          <div class="logo-brand">Floating<span>Counselling</span></div>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+
+                      <div class="nav-dropdown-wrap">
+            <button class="nav-dropdown-trigger">Services <span class="nav-chevron"></span></button>
+            <div class="nav-dropdown-panel">
+              <a href="services.html"><span class="nav-dropdown-icon" style="background:rgba(123,63,140,0.1);color:var(--plum);">♡</span> Counselling &amp; Therapy</a>
+              <a href="property.html"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🏠</span> Property Services</a>
+              <a href="holiday-school.html"><span class="nav-dropdown-icon" style="background:rgba(201,125,78,0.1);color:var(--warm-amber);">🌱</span> Holiday School</a>
+              <a href="community.html"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🤝</span> Community Hub</a>
+            </div>
+          </div>
+          <div class="nav-dropdown-wrap">
+            <button class="nav-dropdown-trigger">Events <span class="nav-chevron"></span></button>
+            <div class="nav-dropdown-panel mega-menu-panel">
+              <div class="mega-menu-grid">
+                <div class="mega-menu-links">
+                  <div class="mega-menu-label">Upcoming</div>
+                  <a href="events.html#masterclass"><span class="nav-dropdown-icon" style="background:rgba(231,76,60,0.1);color:#e74c3c;">🎓</span> <span>The Architecture of Attachment <span class="live-dot"></span></span></a>
+                  <div class="mega-menu-label" style="margin-top:0.5rem;">Initiatives</div>
+                  <a href="events.html#homeless"><span class="nav-dropdown-icon" style="background:rgba(201,125,78,0.1);color:var(--warm-amber);">🏡</span> Homeless Necessity</a>
+                  <a href="events.html#compass"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🌍</span> The Global Compass</a>
+                  <a href="events.html"><span class="nav-dropdown-icon" style="background:rgba(123,63,140,0.1);color:var(--plum);">📜</span> The Legacy Archive</a>
+                </div>
+                <div>
+                  <div class="mega-menu-label">Gallery</div>
+                  <div class="mega-gallery stagger-container">
+                    <div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&auto=format&fit=crop&q=80" alt="Community gathering" class="animate-float"></div>
+                    <div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&auto=format&fit=crop&q=80" alt="Family event"></div>
+                    <div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=400&auto=format&fit=crop&q=80" alt="Workshop session"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="sanctuary.html" class="cart-link">Sanctuary <span class="cart-badge" id="cartBadge">0</span></a>
+          <a href="contact.html">Contact</a>
+          <div class="nav-actions">
+              
+            <a href="login.html" style="font-family: var(--font-heading); font-weight: 600; color: var(--forest-teal);">Log In</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-donate">Donate</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header" style="background: var(--forest-teal);">
+      <div class="page-blob" style="background: rgba(201, 125, 78, 0.15);"></div>
+      <div class="container fade-in visible">
+        <h1>Property Services</h1>
+        <p>Hassle-free property management by an experienced landlord, making life easier for estate agents and landlords.</p>
+      </div>
+    </div>
+
+    <!-- Property Details -->
+    <section class="bg-linen">
+      <div class="container fade-in">
+        <div class="service-detail-section">
+          <div class="service-detail-content">
+            <h2 style="color: var(--forest-teal);">Guaranteed Rent &amp; Management</h2>
+            <p>Floating Counselling Property offers property management services run by an experienced landlord, aimed at making life easier for estate agents and landlords.</p>
+            <p>We handle everything from tenant sourcing to minor maintenance, so you can enjoy a stress-free income stream with guaranteed monthly rent.</p>
+            <ul class="content-list" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+              <li>Guaranteed rent every month for 3–7 years</li>
+              <li>Professional tenants (NHS workers, bankers, etc.)</li>
+              <li>Minor maintenance handled (under £200)</li>
+              <li>Weekly cleaners and grocery deliveries for tenants</li>
+              <li>No voids, no marketing, zero stress</li>
+            </ul>
+            <p style="font-style: italic; color: var(--text-muted); font-size:0.95rem;">Registered with Property Redress Scheme (PRS) & Information Commissioner's Office (ICO).</p>
+            <a href="https://wa.me/447305882959" target="_blank" class="btn btn-secondary" style="margin-top: 1.5rem;">WhatsApp Property Team</a>
+          </div>
+          <div>
+            <img class="service-detail-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Beautiful property interior">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="bg-mist">
+      <div class="container fade-in">
+        <div class="text-center">
+          <h2 class="section-title center">Why Choose Us?</h2>
+        </div>
+        <div class="services-grid" style="margin-top:2rem;">
+          <div class="service-card teal hover-depth">
+            <div class="service-icon">🏡</div>
+            <h3>Zero Voids</h3>
+            <p>Your property will never sit empty. We guarantee occupancy and rent from day one, even between tenancies.</p>
+          </div>
+          <div class="service-card plum hover-depth">
+            <div class="service-icon" style="color:var(--plum);background:rgba(123,63,140,0.1);">🔧</div>
+            <h3>Managed Maintenance</h3>
+            <p>We handle all minor maintenance under £200, keeping your property in excellent condition without the hassle.</p>
+          </div>
+          <div class="service-card amber hover-depth">
+            <div class="service-icon" style="color:var(--warm-amber);background:rgba(201,125,78,0.1);">👥</div>
+            <h3>Premium Tenants</h3>
+            <p>Our tenants are vetted professionals — NHS workers, bankers, and key workers who treat properties with respect.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="impact-section">
+      <div class="container fade-in text-center">
+        <h2>Ready to Simplify Your Property?</h2>
+        <p style="font-size:1.2rem;opacity:0.9;max-width:600px;margin:1rem auto 2rem;">Join landlords across London who trust Floating Counselling Property for guaranteed rent and professional management.</p>
+        <a href="https://wa.me/447305882959?text=I_am_interested_in_property_services" target="_blank" class="btn btn-primary" style="font-size:1.1rem;">Get Started via WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="newsletter-bar">
+      <div class="container">
+        <h4>Join the Anchor List</h4>
+        <p>Weekly insights on growth and stability.</p>
+        <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email address" required><button type="submit">Subscribe</button></form>
+        <p class="newsletter-msg"></p>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="footer-logo"><img src="images/logo.png" alt="Floating Counselling Logo" class="footer-logo-img"><div class="logo-brand">Floating<span>Counselling</span></div></a>
+            <p class="footer-desc">Empowering individuals, families, and marginalised groups through holistic support and therapeutic care.</p>
+          </div>
+          <div class="footer-links">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Counselling &amp; Mentoring</a></li>
+              <li><a href="community.html">Community Hub</a></li>
+              <li><a href="sanctuary.html">Sanctuary (Shop)</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h5>Contact Us</h5>
+            <ul>
+              <li><a href="mailto:info@floatingcounselling.co.uk">info@floatingcounselling.co.uk</a></li>
+              <li>WhatsApp: +44 (0)7305 882959</li>
+              <li style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Croydon and London, UK</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 FLOATING COUNSELLING ™. All rights reserved.</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" data-close-lightbox>✕</button>
+    <button class="lightbox-nav lightbox-prev" onclick="fcLightboxPrev()">‹</button>
+    <img id="lightboxImg" src="" alt="Gallery image">
+    <button class="lightbox-nav lightbox-next" onclick="fcLightboxNext()">›</button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

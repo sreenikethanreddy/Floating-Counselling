@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -162,14 +162,80 @@
           <div class="nav-links" id="navLinks">
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About Us</a>
-            <a href="services.html">Counselling</a>
-            <a href="community.html">Community hub</a>
-            <a href="holiday-school.html">Holiday School</a>
-            <a href="events.html">Events</a>
-            <a href="#contact">Contact</a>
+
+            <!-- Services Dropdown -->
+            <div class="nav-dropdown-wrap">
+              <button class="nav-dropdown-trigger">Services <span class="nav-chevron"></span></button>
+              <div class="nav-dropdown-panel">
+                <a href="services.html">
+                  <span class="nav-dropdown-icon" style="background:rgba(123,63,140,0.1);color:var(--plum);">♡</span>
+                  Counselling &amp; Therapy
+                </a>
+                <a href="property.html">
+                  <span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🏠</span>
+                  Property Services
+                </a>
+                <a href="holiday-school.html">
+                  <span class="nav-dropdown-icon" style="background:rgba(201,125,78,0.1);color:var(--warm-amber);">🌱</span>
+                  Holiday School
+                </a>
+                <a href="community.html">
+                  <span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🤝</span>
+                  Community Hub
+                </a>
+              </div>
+            </div>
+
+            <!-- Events Mega-Menu -->
+            <div class="nav-dropdown-wrap">
+              <button class="nav-dropdown-trigger">Events <span class="nav-chevron"></span></button>
+              <div class="nav-dropdown-panel mega-menu-panel">
+                <div class="mega-menu-grid">
+                  <div class="mega-menu-links">
+                    <div class="mega-menu-label">Upcoming</div>
+                    <a href="events.html#masterclass">
+                      <span class="nav-dropdown-icon" style="background:rgba(231,76,60,0.1);color:#e74c3c;">🎓</span>
+                      <span>The Architecture of Attachment <span class="live-dot"></span></span>
+                    </a>
+                    <div class="mega-menu-label" style="margin-top:0.5rem;">Initiatives</div>
+                    <a href="events.html#homeless">
+                      <span class="nav-dropdown-icon" style="background:rgba(201,125,78,0.1);color:var(--warm-amber);">🏡</span>
+                      Homeless Necessity
+                    </a>
+                    <a href="events.html#compass">
+                      <span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🌍</span>
+                      The Global Compass
+                    </a>
+                    <a href="events.html">
+                      <span class="nav-dropdown-icon" style="background:rgba(123,63,140,0.1);color:var(--plum);">📜</span>
+                      The Legacy Archive
+                    </a>
+                  </div>
+                  <div>
+                    <div class="mega-menu-label">Gallery</div>
+                    <div class="mega-gallery stagger-container">
+                      <div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop&q=80">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&auto=format&fit=crop&q=80" alt="Community gathering" class="animate-float">
+                      </div>
+                      <div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&auto=format&fit=crop&q=80">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&auto=format&fit=crop&q=80" alt="Family event">
+                      </div>
+                      <div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=800&auto=format&fit=crop&q=80">
+                        <img src="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=400&auto=format&fit=crop&q=80" alt="Workshop session">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="sanctuary.html" class="cart-link">Sanctuary <span class="cart-badge" id="cartBadge">0</span></a>
+            <a href="contact.html">Contact</a>
+
             <div class="nav-actions">
+              
               <a href="login.html" style="font-family: var(--font-heading); font-weight: 600; color: var(--forest-teal);">Log In</a>
-              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-primary" style="box-shadow: none;">Donate</a>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-donate">Donate</a>
             </div>
           </div>
         </nav>
@@ -204,25 +270,25 @@
         <div class="container fade-in">
           <div class="text-center">
             <h2 class="section-title center">Wraparound Care</h2>
-            <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">Inspired by Maslow’s hierarchy of needs, we provide emotional, practical, and social care to create lasting change.</p>
+            <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">Inspired by Maslow's hierarchy of needs, we provide emotional, practical, and social care to create lasting change.</p>
           </div>
           
           <div class="services-grid">
-            <div class="service-card plum">
+            <div class="service-card plum hover-depth">
               <div class="service-icon" style="color: var(--plum); background: rgba(123, 63, 140, 0.1);">♡</div>
               <h3>Counselling & Mentoring</h3>
               <p>Over 15,000 sessions delivered by qualified psychotherapists. Free to low-cost counselling for individuals, couples and families.</p>
               <a href="services.html" class="btn btn-secondary" style="background: var(--plum); box-shadow: none;">Explore Therapy</a>
             </div>
             
-            <div class="service-card teal">
+            <div class="service-card teal hover-depth">
               <div class="service-icon">🤝</div>
               <h3>Community Hub</h3>
               <p>A safe space supporting residents with housing, mental health, utility bills, and art therapy. Partnered with the NHS.</p>
               <a href="community.html" class="btn btn-secondary" style="box-shadow: none;">Visit The Hub</a>
             </div>
             
-            <div class="service-card amber">
+            <div class="service-card amber hover-depth">
               <div class="service-icon" style="color: var(--warm-amber); background: rgba(201, 125, 78, 0.1);">🌱</div>
               <h3>Family & Food Support</h3>
               <p>Weekly food distribution and 1:1 mentoring programmes for parents and children. Providing a hot meal and a smile.</p>
@@ -286,7 +352,7 @@
           <h2 class="section-title center" style="display: block; text-align: center;">Community Voices</h2>
           
           <div class="testimonial-grid">
-            <div class="testimonial-card">
+            <div class="testimonial-card hover-depth">
               <p class="testimonial-text">I have learned so much from Impact Parenting and Celestina... I have teenage children... so I really needed this; it was full of knowledge to parent more consciously.</p>
               <div class="testimonial-author">
                 <div class="testimonial-author-avatar">S</div>
@@ -296,7 +362,7 @@
                 </div>
               </div>
             </div>
-            <div class="testimonial-card">
+            <div class="testimonial-card hover-depth">
               <p class="testimonial-text">My son had terrible 2's... I have now been given realistic tools on how I can help him be more resilient... to look at my past traumas and find healthy ways to move forward.</p>
               <div class="testimonial-author">
                 <div class="testimonial-author-avatar">D</div>
@@ -306,7 +372,7 @@
                 </div>
               </div>
             </div>
-            <div class="testimonial-card">
+            <div class="testimonial-card hover-depth">
               <p class="testimonial-text">As a mother of 6 from newborn to 18 years old... I was able to adapt strategies to my real life straight away. Every parent needs this.</p>
               <div class="testimonial-author">
                 <div class="testimonial-author-avatar">N</div>
@@ -340,42 +406,223 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a href="index.html" class="footer-logo">
-            <img src="images/logo.png" alt="Floating Counselling Logo" class="footer-logo-img">
-            <div class="logo-brand">Floating<span>Counselling</span></div>
-          </a>
-            <p class="footer-desc">Empowering individuals, families, and marginalised groups through holistic support and therapeutic care. Here for you, whether you need counselling or just a hot meal.</p>
+      <!-- FAQ Accordion -->
+      <div class="footer-faq">
+        <div class="container">
+          <h3>Frequently Asked Questions</h3>
+          <div class="faq-item">
+            <button class="faq-question">How do I book a session? <span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p style="padding: 0 0 0.5rem;">Click "Book a Session." Complete the intake form and proceed to our secure payment gateway. You will receive an email instantly.</p></div>
           </div>
-          <div class="footer-links">
-            <h5>Quick Links</h5>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Counselling & Mentoring</a></li>
-              <li><a href="community.html">Community Hub</a></li>
-              <li><a href="holiday-school.html">Holiday School</a></li>
-              <li><a href="events.html">Events</a></li>
-            </ul>
+          <div class="faq-item">
+            <button class="faq-question">What is 'The Global Compass' support? <span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p style="padding: 0 0 0.5rem;">A specialized remote therapy service designed for international clients and those navigating the psychological stress of relocation.</p></div>
           </div>
-          <div class="footer-links" id="contact">
-            <h5>Contact Us</h5>
-            <ul>
-              <li><a href="mailto:info@floatingcounselling.co.uk">info@floatingcounselling.co.uk</a></li>
-              <li>WhatsApp: +44 (0)7305 882959</li>
-              <li style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Croydon and London, UK</li>
-            </ul>
+          <div class="faq-item">
+            <button class="faq-question">What does 'Homeless Necessity' involve? <span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p style="padding: 0 0 0.5rem;">Our advocacy arm. We provide therapeutic support and property signposting for those facing housing displacement via the Woodside Project.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How does the Membership work? <span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p style="padding: 0 0 0.5rem;"><strong>The Anchor (Monthly)</strong> includes Legacy Archive access. <strong>The Sail (Annual)</strong> includes 15% off products and priority masterclass booking.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is my data secure? <span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p style="padding: 0 0 0.5rem;">Yes. We use end-to-end encrypted portals and industry-standard SSL for all financial transactions.</p></div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 FLOATING COUNSELLING ™. All rights reserved.</p>
+      </div>
+
+      <!-- Newsletter Bar -->
+      <div class="newsletter-bar">
+        <div class="container">
+          <h4>Join the Anchor List</h4>
+          <p>Weekly insights on growth and stability.</p>
+          <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-msg"></p>
+        </div>
+      </div>
+
+      <!-- Footer Grid -->
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a href="index.html" class="footer-logo">
+                <img src="images/logo.png" alt="Floating Counselling Logo" class="footer-logo-img">
+                <div class="logo-brand">Floating<span>Counselling</span></div>
+              </a>
+              <p class="footer-desc">Empowering individuals, families, and marginalised groups through holistic support and therapeutic care. Here for you, whether you need counselling or just a hot meal.</p>
+            </div>
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Counselling &amp; Mentoring</a></li>
+                <li><a href="community.html">Community Hub</a></li>
+                <li><a href="sanctuary.html">Sanctuary (Shop)</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-links" id="contact">
+              <h5>Contact Us</h5>
+              <ul>
+                <li><a href="mailto:info@floatingcounselling.co.uk">info@floatingcounselling.co.uk</a></li>
+                <li>WhatsApp: +44 (0)7305 882959</li>
+                <li style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Croydon and London, UK</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 FLOATING COUNSELLING ™. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
 
   </div>
 
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" data-close-lightbox>✕</button>
+    <button class="lightbox-nav lightbox-prev" onclick="fcLightboxPrev()">‹</button>
+    <img id="lightboxImg" src="" alt="Gallery image">
+    <button class="lightbox-nav lightbox-next" onclick="fcLightboxNext()">›</button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- Book a Session Modal -->
+  <div class="book-overlay" id="bookModal">
+    <div class="book-modal">
+      <div class="checkout-header">
+        <h2>Book a Session</h2>
+        <button class="checkout-close" data-close-book>✕</button>
+      </div>
+      <div class="step-progress">
+        <div class="step-dot active" id="bookDot1"><div class="step-dot-circle">1</div><div class="step-dot-label">Service</div></div>
+        <div class="step-dot" id="bookDot2"><div class="step-dot-circle">2</div><div class="step-dot-label">Schedule</div></div>
+        <div class="step-dot" id="bookDot3"><div class="step-dot-circle">3</div><div class="step-dot-label">Payment</div></div>
+      </div>
+      <div id="bookStep1" class="checkout-step" style="display:block;">
+        <h3>Select Your Service</h3>
+        <div class="form-group">
+          <label for="bookService">Service Type</label>
+          <select id="bookService" class="form-control">
+            <option value="">Choose a service...</option>
+            <option value="individual">Individual Therapy (1:1)</option>
+            <option value="couple">Couple Therapy</option>
+            <option value="family">Family Therapy</option>
+            <option value="group">Group Sessions</option>
+            <option value="mentoring">Mentoring</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="bookName">Full Name</label>
+          <input type="text" id="bookName" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="bookEmail">Email Address</label>
+          <input type="email" id="bookEmail" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="checkout-actions">
+          <button class="btn btn-primary" onclick="fcNextBookStep()" style="width:100%;">Continue</button>
+        </div>
+      </div>
+      <div id="bookStep2" class="checkout-step">
+        <h3>Choose Date &amp; Time</h3>
+        <div class="form-group">
+          <label for="bookDate">Preferred Date</label>
+          <input type="date" id="bookDate" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="bookTime">Preferred Time</label>
+          <select id="bookTime" class="form-control">
+            <option value="09:00">09:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="14:00">02:00 PM</option>
+            <option value="15:00">03:00 PM</option>
+            <option value="16:00">04:00 PM</option>
+          </select>
+        </div>
+        <div class="checkout-actions">
+          <button class="btn btn-secondary" onclick="fcPrevBookStep()">Back</button>
+          <button class="btn btn-primary" onclick="fcNextBookStep()">Continue</button>
+        </div>
+      </div>
+      <div id="bookStep3" class="checkout-step">
+        <h3>Secure Payment</h3>
+        <div class="form-group">
+          <label for="bookCard">Card Number</label>
+          <input type="text" id="bookCard" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <div class="form-group">
+            <label for="bookExpiry">Expiry</label>
+            <input type="text" id="bookExpiry" class="form-control" placeholder="MM/YY" maxlength="5">
+          </div>
+          <div class="form-group">
+            <label for="bookCVV">CVV</label>
+            <input type="text" id="bookCVV" class="form-control" placeholder="123" maxlength="3">
+          </div>
+        </div>
+        <div class="checkout-actions">
+          <button class="btn btn-secondary" onclick="fcPrevBookStep()">Back</button>
+          <button class="btn btn-primary" onclick="fcCloseBookModal()">Confirm Booking</button>
+        </div>
+        <p style="text-align:center;color:var(--text-muted);font-size:0.8rem;margin-top:1rem;">🔒 Secured with SSL encryption</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Membership Panel -->
+  <div class="membership-panel" id="membershipPanel">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;">
+      <h2 style="font-size:1.5rem;">Join Membership</h2>
+      <button class="checkout-close" data-close-membership>✕</button>
+    </div>
+    <div style="background:var(--mist);border-radius:14px;padding:1.5rem;margin-bottom:1.5rem;">
+      <h4 style="color:var(--forest-teal);margin-bottom:0.5rem;">The Anchor — Monthly</h4>
+      <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:0.5rem;">Legacy Archive access, community events, and monthly newsletter.</p>
+      <p style="font-family:var(--font-heading);font-weight:700;font-size:1.5rem;color:var(--warm-amber);">£29/mo</p>
+    </div>
+    <div style="background:var(--plum);border-radius:14px;padding:1.5rem;margin-bottom:2rem;color:white;">
+      <h4 style="color:white;margin-bottom:0.5rem;">The Sail — Annual</h4>
+      <p style="font-size:0.95rem;opacity:0.9;margin-bottom:0.5rem;">15% off products, priority masterclass booking, all monthly benefits.</p>
+      <p style="font-family:var(--font-heading);font-weight:700;font-size:1.5rem;">£270/yr</p>
+    </div>
+    <h3 style="font-size:1.2rem;margin-bottom:1rem;">Payment Details</h3>
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" class="form-control" placeholder="Your name">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" placeholder="Your email">
+    </div>
+    <div class="form-group">
+      <label>Card Number</label>
+      <input type="text" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19">
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+      <div class="form-group">
+        <label>Expiry</label>
+        <input type="text" class="form-control" placeholder="MM/YY" maxlength="5">
+      </div>
+      <div class="form-group">
+        <label>CVV</label>
+        <input type="text" class="form-control" placeholder="123" maxlength="3">
+      </div>
+    </div>
+    <button class="btn btn-primary" style="width:100%;" onclick="fcCloseMembershipPanel()">Join Now</button>
+    <p style="text-align:center;color:var(--text-muted);font-size:0.8rem;margin-top:1rem;">🔒 Secured with SSL encryption</p>
+  </div>
+  <div class="membership-overlay" id="membershipOverlay"></div>
+
+  <script src="js/main.js"></script>
   <script>
     // Handle Custom Loader
     window.addEventListener('load', function () {
@@ -384,38 +631,6 @@
         document.getElementById('fc-site').classList.add('fc-visible');
       }, 3000); // 3 second animation as requested
     });
-
-    // Handle Header Scroll
-    window.addEventListener('scroll', function() {
-      const header = document.getElementById('header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-
-      // Handle scroll animations
-      const fadeElements = document.querySelectorAll('.fade-in');
-      fadeElements.forEach(element => {
-        const rect = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        if (rect.top <= windowHeight * 0.8) {
-          element.classList.add('visible');
-        }
-      });
-    });
-
-    // Trigger initial scroll check for above-the-fold elements
-    window.dispatchEvent(new Event('scroll'));
-
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    if(hamburger) {
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-      });
-    }
   </script>
 </body>
 </html>

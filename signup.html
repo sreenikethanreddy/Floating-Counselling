@@ -1,39 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Account | Floating Counselling</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+
   <header id="header">
     <div class="container">
       <nav class="navbar">
-        <a href="index.html" class="logo-text">
-          <img src="images/logo.png" alt="Floating Counselling Logo" class="site-logo">
-          <div class="logo-brand">Floating<span>Counselling</span></div>
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
+        <a href="index.html" class="logo-text"><img src="images/logo.png" alt="Floating Counselling Logo" class="site-logo"><div class="logo-brand">Floating<span>Counselling</span></div></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
         <div class="nav-links" id="navLinks">
           <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Counselling</a>
-          <a href="community.html">Community hub</a>
-          <a href="holiday-school.html">Holiday School</a>
-          <a href="events.html">Events</a>
-          <a href="#contact">Contact</a>
-          <div class="nav-actions">
-            <a href="login.html" style="font-family: var(--font-heading); font-weight: 600; color: var(--forest-teal);">Log In</a>
-            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-primary" style="box-shadow: none;">Donate</a>
-          </div>
+            <a href="about.html">About Us</a>
+
+                      <div class="nav-dropdown-wrap"><button class="nav-dropdown-trigger">Services <span class="nav-chevron"></span></button><div class="nav-dropdown-panel"><a href="services.html"><span class="nav-dropdown-icon" style="background:rgba(123,63,140,0.1);color:var(--plum);">♡</span> Counselling &amp; Therapy</a><a href="property.html"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🏠</span> Property Services</a><a href="holiday-school.html"><span class="nav-dropdown-icon" style="background:rgba(201,125,78,0.1);color:var(--warm-amber);">🌱</span> Holiday School</a><a href="community.html"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🤝</span> Community Hub</a></div></div>
+          <div class="nav-dropdown-wrap"><button class="nav-dropdown-trigger">Events <span class="nav-chevron"></span></button><div class="nav-dropdown-panel mega-menu-panel"><div class="mega-menu-grid"><div class="mega-menu-links"><div class="mega-menu-label">Upcoming</div><a href="events.html#masterclass"><span class="nav-dropdown-icon" style="background:rgba(231,76,60,0.1);color:#e74c3c;">🎓</span><span>The Architecture of Attachment <span class="live-dot"></span></span></a><div class="mega-menu-label" style="margin-top:0.5rem;">Initiatives</div><a href="events.html#homeless"><span class="nav-dropdown-icon" style="background:rgba(201,125,78,0.1);color:var(--warm-amber);">🏡</span> Homeless Necessity</a><a href="events.html#compass"><span class="nav-dropdown-icon" style="background:rgba(29,106,92,0.1);color:var(--forest-teal);">🌍</span> The Global Compass</a><a href="events.html"><span class="nav-dropdown-icon" style="background:rgba(123,63,140,0.1);color:var(--plum);">📜</span> The Legacy Archive</a></div><div><div class="mega-menu-label">Gallery</div><div class="mega-gallery stagger-container"><div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&auto=format&fit=crop&q=80" alt="Community gathering" class="animate-float"></div><div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&auto=format&fit=crop&q=80" alt="Family event"></div><div class="mega-gallery-item stagger-item hover-depth" data-lightbox="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=800&auto=format&fit=crop&q=80"><img src="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=400&auto=format&fit=crop&q=80" alt="Workshop session"></div></div></div></div></div></div>
+          <a href="sanctuary.html" class="cart-link">Sanctuary <span class="cart-badge" id="cartBadge">0</span></a>
+          <a href="contact.html">Contact</a>
+          <div class="nav-actions"><a href="login.html" style="font-family:var(--font-heading);font-weight:600;color:var(--forest-teal);">Log In</a><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@floatingcounselling.co.uk&currency_code=GBP" target="_blank" class="btn btn-donate">Donate</a></div>
         </div>
       </nav>
     </div>
@@ -41,63 +33,43 @@
 
   <main>
     <div class="auth-wrapper">
-      <div class="auth-blob-1" style="background: rgba(29, 106, 92, 0.1);"></div>
-      <div class="auth-blob-2" style="background: rgba(123, 63, 140, 0.1);"></div>
-      
+      <div class="auth-blob-1"></div>
+      <div class="auth-blob-2"></div>
+
       <div class="auth-card fade-in visible">
         <div class="auth-header">
-          <h2>Create Account</h2>
-          <p>Join the Floating Counselling community.</p>
+          <h2>Join Our Community</h2>
+          <p>Create your account and start your journey.</p>
         </div>
-        
+
         <form action="#" method="POST">
           <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" class="form-control" placeholder="Enter your full name" required>
           </div>
-
           <div class="form-group">
             <label for="email">Email Address</label>
             <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
           </div>
-          
           <div class="form-group">
             <label for="password">Password</label>
             <input type="password" id="password" class="form-control" placeholder="Create a password" required>
           </div>
-          
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+          </div>
           <div class="auth-actions">
-            <button type="submit" class="btn btn-primary">Sign Up</button>
-            <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin: 0.5rem 0;">Or</p>
-            <button type="button" class="btn btn-secondary" style="background: white; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.1); box-shadow: none;">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" style="width: 18px; margin-right: 10px; vertical-align: middle;"> Continue with Google
-            </button>
+            <button type="submit" class="btn btn-primary">Create Account</button>
           </div>
         </form>
-        
-        <div class="auth-footer">
-          Already have an account? <a href="login.html">Log In</a>
-        </div>
+        <div class="auth-footer">Already have an account? <a href="login.html">Log In</a></div>
       </div>
     </div>
   </main>
-  
-  <script>
-    window.addEventListener('scroll', function() {
-      const header = document.getElementById('header');
-      if (window.scrollY > 50) { header.classList.add('scrolled'); } 
-      else { header.classList.remove('scrolled'); }
-    });
-    window.dispatchEvent(new Event('scroll'));
 
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    if(hamburger) {
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-      });
-    }
-  </script>
+  <div class="lightbox-overlay" id="lightbox"><button class="lightbox-close" data-close-lightbox>✕</button><button class="lightbox-nav lightbox-prev" onclick="fcLightboxPrev()">‹</button><img id="lightboxImg" src="" alt="Gallery image"><button class="lightbox-nav lightbox-next" onclick="fcLightboxNext()">›</button><div class="lightbox-counter" id="lightboxCounter"></div></div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
