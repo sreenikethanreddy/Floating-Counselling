@@ -3228,6 +3228,7 @@ textarea.form-control {
   .subpage-grid-2,
   .auth-shell-grid,
   .subpage-card-grid,
+  .subpage-card-grid.two,
   .shop-highlight-grid {
     grid-template-columns: 1fr;
   }
@@ -3256,6 +3257,11 @@ textarea.form-control {
   .timeline-modern-item {
     grid-template-columns: 1fr;
   }
+
+  .event-featured-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3273,5 +3279,14 @@ textarea.form-control {
   .subpage-hero-badges,
   .pill-list {
     gap: 0.55rem;
+  }
+
+  .initiative-card {
+    padding: 1.5rem;
+  }
+
+  .initiative-card .btn {
+    width: 100%;
+    text-align: center;
   }
 }
